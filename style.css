@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+}
+#Page1{
+    width: 100%;
+    height: 100vh;
+    background-color: #dadada;
+    background-size: contain;
+    position: relative;
+    z-index: 10;
+}
+#Cursor{
+    width: 7vw;
+    height: 7vw;
+    background-color: #ff5f38;
+    color: #000000;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+    font-weight: 1;
+    transform: translate(-50%,-50%);
+}
+#v1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+#Page1-Content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#Nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 3vw;
+}
+#Nav h4{
+    font-size: 1.3vw;
+    font-weight: 150;
+}
+#Nav h3{
+    font-size: 1.4vw;
+    font-weight: 150;
+}
+#Page1-Content h1{
+    font-size: 18vw;
+    font-weight: 250;
+}
+#Page2{
+    width: 100%;
+    height: 100vh;
+    background-color: beige;
+}
+
+
+
