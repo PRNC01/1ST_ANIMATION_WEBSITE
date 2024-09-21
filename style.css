@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+    font-family: font;
+    src: url(./Rejouice-Headline.woff2);
+}
+@font-face {
+    font-family: font2;
+    src: url(./NBInternationalProBoo.woff2);
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -8,7 +16,7 @@ html, body{
     height: 100%;
     width: 100%;
     color: #ffffff;
-    font-family: "Roboto", sans-serif;
+    font-family: font;
 }
 #Page1{
     width: 100%;
@@ -18,7 +26,7 @@ html, body{
     position: relative;
     z-index: 10;
 }
-#Cursor{
+.Cursor{
     width: 7vw;
     height: 7vw;
     background-color: #ff5f38;
@@ -26,7 +34,7 @@ html, body{
     border-radius: 50%;
     position: fixed;
     z-index: 9;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     font-size: 1.2vw;
@@ -64,14 +72,297 @@ html, body{
     font-weight: 150;
 }
 #Page1-Content h1{
-    font-size: 18vw;
+    height: 23rem;
+    font-size: 25rem;
     font-weight: 250;
+    margin-bottom: 0%;
+    display: flex;
+    align-items: center;
 }
 #Page2{
     width: 100%;
-    height: 100vh;
-    background-color: beige;
+    height: 150vh;
+    background-color: #FAF8F3;
+    padding: 80px 40px;
+    color: #000000;
+    font-family: font2;
 }
-
-
-
+#First-Row{
+    height: 3.4rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+#First-Row-Border{
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+}
+#Page2-Main-Content{
+    width: 100%;
+    height: 50%;
+    font-size: 4.3rem;
+}
+#Page2-Last-Section{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #303030;
+    font-size: 17px;
+}
+#Page2-Last-Section button{
+    background-color: #000000;
+    color: #dadada;
+    border: none;
+    padding: 3px;
+    border-radius: 15px;
+    font-size: 10px;
+    padding: 5px 7px;
+}
+#Service-Button{
+    width: 49%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 56px;
+    color: #000000;
+    font-weight: 30;
+    cursor: pointer;
+}
+#Page3{
+    width: 100%;
+    height: 109.8vh;
+    background-color: #FAF8F3;
+    color: #000000;
+    font-family: font2;
+    padding: 20px 40px;
+}
+#Page3-Heading{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+}
+#Page3-Main-Content{
+    width: 100%;
+    height: 37.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Items{
+    width: 32.5%;
+    height: 36rem;
+    background-color: #000000;
+    position: relative;
+}
+#Page3-Main-Content .Items img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+#Page3-Main-Content .Items:hover img{
+    opacity: 0;
+}
+#Page3-Main-Content .Items video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#Page4{
+    width: 100%;
+    height: 79vh;
+    background-color: #FAF8F3;
+    padding: 0px 40px;
+    color: #000000;
+    margin-top: -3rem;
+}
+#Page4-Heading{
+    width: 100%;
+    height: 6rem;
+    font-size: 27.56px;
+    font-family: font2;
+    align-content: center;
+}
+#Page4-Heading-Border{
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+}
+#Page4-Main-Content{
+    width: 100%;
+    height: 29rem;
+    font-size: 3.9rem;
+    font-family: font2;
+}
+#Page5{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAF8F3;
+}
+#Page5 video{
+    height: 100%;
+}
+#Page5 svg{
+    position: absolute;
+    height: 55%;
+}
+#Page6{
+    width: 100%;
+    height: 85vh;
+    background-color: #FAF8F3;
+    color: #000000;
+    font-family: font2;
+    padding: 18px 40px;
+}
+#Page6-Heading{
+    width: 100%;
+    height: 5.3rem;
+    align-content: center;
+    font-size: 27.56px;  /*71.1967*/
+}
+#Page6-Heading-Border{
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+}
+#Page6-Main-Content{
+    font-size: 71.1967px ;
+}
+#Page7{
+    width: 100%;
+    height: 37rem;
+    background-color: #FAF8F3;
+    color: #000000;
+    padding: 0px 30px;
+    z-index: 9;
+}
+#Page7-Heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 150.432px;
+}
+#Contact{
+    width: auto;
+    height: 15rem;
+    font-size: 2rem;
+    align-content: end;
+    font-family: font2;
+    cursor: pointer;
+}
+#Contact:hover{
+    text-decoration: underline;
+}
+#Swiper{
+    width: 100%;
+    height: 22rem;
+    background-color: #ff5f38;
+    margin-top: -6rem;
+    z-index: 10;
+}
+#Page8{
+    width: 100%;
+    height: 70vh;
+    background-color: #FAF8F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #000000;
+    font-family: font2;
+}
+#aboutUsBtn{
+    width: auto;
+    height: 6rem;
+    font-size: 5rem;
+}
+#Page9{
+    width: 100%;
+    height: 105vh;
+    background-color: #000000;
+    padding: 39px 15px;
+    font-family: font2;
+}
+#Page9-Part1{
+    width: 100%;
+    height: 50vh;
+    padding: 0px 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#Left{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#Page9-Heading{
+    font-size: 27.56px;
+}
+#Left-Up button{
+    width: 8rem;
+    height: 3.5rem;
+    border: 1px solid #ffffff;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 2rem 1rem;
+    font-size: 1rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+#Left-Up button:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+#Right{
+    width: 25rem;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 18.3733px;
+}
+#Left1-Right{
+    width: 57%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#Right1-Right{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#Page9-Part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    overflow: hidden;
+}
+#Footer-Heading{
+    width: 100%;
+    height: 100%;
+    font-size: 17rem;
+    font-family: font;
+    overflow-y: hidden;
+    font-weight: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
